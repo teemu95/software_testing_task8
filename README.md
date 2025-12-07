@@ -17,4 +17,4 @@ Individuals who remove or modify the license file will also carry the consequenc
 - Tests are written with Mocha and Chai under `test/` and only cover modules in `src/` (the internal helpers in `src/.internal` are intentionally excluded).
 - Run the suite with `npm test`.
 - Generate a coverage report with `npm run coverage`; c8 is configured to focus on `src/` and produces a text summary plus an lcov report.
-- The current suite sits around 78% line coverage while focusing on the public helpers without over-specifying internals; adjust the suite or the `c8` settings if you need that closer to ~60%.
+- The current suite sits around 93% line coverage.
