@@ -23,9 +23,10 @@ jobs:
 
       - name: Run tests with coverage
         run: npm test
-        continue-on-error: true
+        continue-on-error: true   # allow failing tests but keep job running
 
       - name: Send coverage to Coveralls
+        if: always()              # run even if previous step failed
         uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
