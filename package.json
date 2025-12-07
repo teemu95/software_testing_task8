@@ -5,10 +5,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no tests are implemented yet \" && exit 1"
+    "test": "mocha \"test/**/*.test.js\"",
+    "coverage": "c8 --all --reporter=text --reporter=lcov --include=\"src/*.js\" mocha \"test/**/*.test.js\""
   },
   "author": "",
   "license": "MIT",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "c8": "^9.1.0",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  }
 }
