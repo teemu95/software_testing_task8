@@ -14,7 +14,9 @@ Individuals who remove or modify the license file will also carry the consequenc
 
 ## Testing
 
+[![Coverage Status](https://coveralls.io/repos/github/teemu95/software_testing_task8/badge.svg?branch=main)](https://coveralls.io/github/teemu95/software_testing_task8?branch=main)
+
 - Tests are written with Mocha and Chai under `test/` and only cover modules in `src/` (the internal helpers in `src/.internal` are intentionally excluded).
 - Run the suite with `npm test`.
 - Generate a coverage report with `npm run coverage`; c8 is configured to focus on `src/` and produces a text summary plus an lcov report.
-- The current suite sits around 93% line coverage.
+
